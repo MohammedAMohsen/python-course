@@ -18,3 +18,8 @@ images/new_*.png
 Icon/
 desktop.ini
 .DS_Store
+
+# Files the file-handling lessons write (the samples text1-3 and Mohammed.txt are kept)
+files/mode.txt
+files/fun.txt
+files/friends.txt
