@@ -1,0 +1,20 @@
+# Virtual environment (rebuild it with: pip install -r requirements.txt)
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Files the lessons create when you run them
+*.db
+*.log
+assignments/files/
+images/new_*.png
+
+# Editor and system files
+.vscode/
+.idea/
+Icon/
+desktop.ini
+.DS_Store
