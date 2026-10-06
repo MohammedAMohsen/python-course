@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block body %}
+
+    <h1 class="page-head">{{page_head}}</h1>    
+    <p class="page-description">{{description}}</p>
+
+    {% for user in users_skills %}
+    <div class="user-skills">
+        <div class="user-box">
+            <div class="user">User {{user["name"]}}:</div>
+            <!--   ممكن اكتبها هيك   user.name   -->
+        </div>
+        {% for skill in user["skills"] %}
+        <div class="skill-box">
+            <div class="skill-name">{{skill[0]}}</div>
+            <div class="skill-progress">
+                <span style="width: {{skill[1]}}%"></span>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+
+{% endblock %}
